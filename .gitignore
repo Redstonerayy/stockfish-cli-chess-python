@@ -1,3 +1,4 @@
-*.o
-python/__pycache__
-/stockfish*
+# don't commit pycache
+/__pycache__
+# don't commit sourcecode of stockfish because it can be easily obtained
+/Stockfish*

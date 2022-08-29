@@ -37,7 +37,7 @@ from stockfish import Stockfish
 import random
 import os
 
-path = "/home/anton/Projects/stockfish_15_win_x64_avx2/stockfish_15_src/src/stockfish"
+path = "./Stockfish/src/stockfish"
 
 stockfish = Stockfish(path=path)
 stockfish.update_engine_parameters({"Hash": mb, "Threads": threads})

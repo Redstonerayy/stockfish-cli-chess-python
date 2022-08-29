@@ -1,7 +1,17 @@
-# Stockfish test
-This is a developement build of the stockfish engine straight from their website.
-Download nnue with `make net`
-Build on Linux with clang in the stockfish_15_src/src folder via Makefile with `make -j profile-build ARCH=x86-64-avx2 COMP=clang COMPCXX=clang++`.
-Clean with `objclean`.
+# Stockfish CLI Chess
+Finally you can lose against one of the best Chess AIs in your terminal.<br>
+On unix run the setup script `chmod +x ./setup.sh` to make it executable and then run it with `./setup.sh`.
+<br>
+It automates the manual build and assume you have clang and clang++ installed and your cpu has support for avx2
 
-Python code for working with Stockfish in /python
+# Manual Build
+* Clone the official repo with `git clone https://github.com/official-stockfish/Stockfish.git`
+* Go into the source folder `cd Stockfish/src/`
+* Download the latest neural network `make net`
+* Build stockfish with the desired arguments `make {your arguments}` e.g. `make build ARCH=x86-64-modern`
+* Run the game with `python main.py`.
+
+# Note
+* Only tested on Linux. May work on Unix-Like Systems (e.g. MacOs, BSD) but not tested for Windows.
+* This is a simple low effort program. Just simple CLI, nothing more yet.
+* If you encounter problems you may open an issue
