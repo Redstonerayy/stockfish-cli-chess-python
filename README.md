@@ -5,6 +5,7 @@ On unix run the setup script `chmod +x ./setup.sh` to make it executable and the
 It automates the manual build and assume you have clang and clang++ installed and your cpu has support for avx2
 
 # Manual Build
+* Install stockfish for python with `pip install stockfish`
 * Clone the official repo with `git clone https://github.com/official-stockfish/Stockfish.git`
 * Go into the source folder `cd Stockfish/src/`
 * Download the latest neural network `make net`

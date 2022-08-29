@@ -1,3 +1,4 @@
+pip install stockfish
 git clone https://github.com/official-stockfish/Stockfish.git
 cd Stockfish/src/
 make net
